@@ -243,6 +243,49 @@ docs %>%
   datatable()
 ```
 
+```{r}
+disturbance_types <- tibble::tibble(
+  type = c(
+    "Animal, general",
+    "Grazing, domestic stock",
+    "Grazing, native ungulates",
+    "Herbivory, invertebrate",
+    "Herbivory, vertebrates",
+    "Human, general",
+    "Cultivation",
+    "Fire suppression",
+    "Herbicide or chemical",
+    "Mowing",
+    "Roads and vehicular traffic",
+    "Timber harvest, general",
+    "Timber harvest, clearcut",
+    "Timber harvest, selective",
+    "Trampling and trails",
+    "Natural, general",
+    "Avalanche and snow",
+    "Cryoturbation",
+    "Erosion",
+    "Floods",
+    "Hydrologic alteration",
+    "Ice",
+    "Mass movements (landslides)",
+    "Plant disease",
+    "Salt spray",
+    "Tides",
+    "Wind, chronic",
+    "Wind event",
+    "Fire, general",
+    "Fire, canopy",
+    "Fire, ground",
+    "Other disturbances",
+    "unknown"
+  )
+)
+
+datatable(disturbance_types)
+```
+
+
 ### Soils
 
 The Soils loader table is used to describe soils collected from a plot. This includes information on soil horizons, texture, color, depth, and chemical properties.
